@@ -1,0 +1,43 @@
+export declare const invalidVote: {
+    voteWeight: bigint;
+    nonce: bigint;
+    maxVoteWeight: bigint;
+    voteCreditBalance: bigint;
+};
+export declare const defaultVote: {
+    voteWeight: bigint;
+    nonce: bigint;
+    maxVoteWeight: bigint;
+    voteCreditBalance: bigint;
+    voteOptionIndex: bigint;
+};
+export declare const SG_DATA = "0x0000000000000000000000000000000000000000000000000000000000000000";
+export declare const QUINARY_HASH_LENGTH = 5;
+export declare const HASH_LENGTH = 2;
+export declare const SUB_DEPTH = 2;
+export declare const PROCESS_DEPTH = 4;
+export declare const LEAVES_PER_NODE = 5;
+export declare const NOTHING_UP_MY_SLEEVE = "8370432830353022751713833565135785980866757267633941821328460903436894336785";
+export declare const ivcpData = "0x0000000000000000000000000000000000000000000000000000000000000000";
+export declare const maxUsers = 15;
+export declare const maxMessages = 25;
+export declare const maxVoteOptions = 25;
+export declare const initialVoiceCredits = 1000;
+export declare const signUpDuration = 120;
+export declare const votingDuration = 120;
+export declare const signUpDurationInSeconds = 3600;
+export declare const votingDurationInSeconds = 3600;
+export declare const messageBatchSize = 4;
+export declare const tallyBatchSize = 4;
+export declare const quadVoteTallyBatchSize = 4;
+export declare const voteOptionsMaxLeafIndex = 3;
+export declare const duration = 300;
+export declare const intStateTreeDepth = 1;
+export declare const messageTreeDepth = 2;
+export declare const messageBatchDepth = 1;
+export declare const STATE_TREE_DEPTH = 10;
+export declare const INT_STATE_TREE_DEPTH = 1;
+export declare const MSG_TREE_DEPTH = 2;
+export declare const VOTE_OPTION_TREE_DEPTH = 2;
+export declare const MSG_BATCH_DEPTH = 1;
+//# sourceMappingURL=constants.d.ts.map

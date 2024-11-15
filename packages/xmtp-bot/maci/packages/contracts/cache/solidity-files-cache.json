@@ -1,0 +1,3452 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/MACI.sol": {
+      "lastModificationDate": 1730842993075,
+      "contentHash": "beb5cb18fa31c2c3466532125538d9c1",
+      "sourceName": "contracts/MACI.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IPollFactory.sol",
+        "./interfaces/IMPFactory.sol",
+        "./interfaces/ITallyFactory.sol",
+        "./initialVoiceCreditProxy/InitialVoiceCreditProxy.sol",
+        "./gatekeepers/SignUpGatekeeper.sol",
+        "./interfaces/IMACI.sol",
+        "./utilities/Params.sol",
+        "./utilities/Utilities.sol",
+        "./utilities/DomainObjs.sol",
+        "./crypto/BabyJubJub.sol",
+        "./trees/LazyIMT.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MACI"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/interfaces/IPollFactory.sol": {
+      "lastModificationDate": 1730842994162,
+      "contentHash": "d6e6b5fcfc2fb26c5009596c8d2067a6",
+      "sourceName": "contracts/interfaces/IPollFactory.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utilities/Params.sol",
+        "../utilities/DomainObjs.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "IPollFactory"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/interfaces/ITallyFactory.sol": {
+      "lastModificationDate": 1730842994218,
+      "contentHash": "02137262f6304224ffb61ac43d4dae99",
+      "sourceName": "contracts/interfaces/ITallyFactory.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utilities/DomainObjs.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "ITallyFactory"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/interfaces/IMPFactory.sol": {
+      "lastModificationDate": 1730842994112,
+      "contentHash": "4ed473ba8be80b6fdccd2078e5dbea66",
+      "sourceName": "contracts/interfaces/IMPFactory.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utilities/DomainObjs.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "IMessageProcessorFactory"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/interfaces/IMACI.sol": {
+      "lastModificationDate": 1730842994105,
+      "contentHash": "ae16b863af1866e332580db65d7961d4",
+      "sourceName": "contracts/interfaces/IMACI.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IMACI"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/initialVoiceCreditProxy/InitialVoiceCreditProxy.sol": {
+      "lastModificationDate": 1730842994002,
+      "contentHash": "782c19851b169138011f8871c59cdef4",
+      "sourceName": "contracts/initialVoiceCreditProxy/InitialVoiceCreditProxy.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "InitialVoiceCreditProxy"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/gatekeepers/SignUpGatekeeper.sol": {
+      "lastModificationDate": 1730842993866,
+      "contentHash": "7b7faec409d60f4e623b813c331f1ddc",
+      "sourceName": "contracts/gatekeepers/SignUpGatekeeper.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SignUpGatekeeper"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/utilities/DomainObjs.sol": {
+      "lastModificationDate": 1730842995320,
+      "contentHash": "fe48ef9511a961255c3575e4a6edae63",
+      "sourceName": "contracts/utilities/DomainObjs.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "DomainObjs"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/crypto/BabyJubJub.sol": {
+      "lastModificationDate": 1730842993311,
+      "contentHash": "e9fd71a8276b409e6d5fa15b6b2c8495",
+      "sourceName": "contracts/crypto/BabyJubJub.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "CurveBabyJubJub"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/LazyIMT.sol": {
+      "lastModificationDate": 1730842995117,
+      "contentHash": "d9e21c0b63304a69645cbc89a2ed0b27",
+      "sourceName": "contracts/trees/LazyIMT.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../crypto/PoseidonT3.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "InternalLazyIMT"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/utilities/Params.sol": {
+      "lastModificationDate": 1730842995356,
+      "contentHash": "b216bafa6ab42010bd5054845de35924",
+      "sourceName": "contracts/utilities/Params.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IMACI.sol",
+        "../trees/AccQueue.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Params"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/utilities/Utilities.sol": {
+      "lastModificationDate": 1730842995372,
+      "contentHash": "81e09d904d7f97b00ca691913ce0b475",
+      "sourceName": "contracts/utilities/Utilities.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./DomainObjs.sol",
+        "../crypto/Hasher.sol",
+        "../crypto/SnarkConstants.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Utilities"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/AccQueue.sol": {
+      "lastModificationDate": 1730842994455,
+      "contentHash": "be5f5a62294fdf7cefb8b0e144f496c4",
+      "sourceName": "contracts/trees/AccQueue.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "../crypto/Hasher.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AccQueue"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/crypto/Hasher.sol": {
+      "lastModificationDate": 1730842993318,
+      "contentHash": "94e426d803a903d88c4aa8d7032eb4f4",
+      "sourceName": "contracts/crypto/Hasher.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SnarkConstants.sol",
+        "./PoseidonT3.sol",
+        "./PoseidonT4.sol",
+        "./PoseidonT5.sol",
+        "./PoseidonT6.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Hasher"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1731697881141,
+      "contentHash": "d3c790edc9ccf808a17c5a6cd13614fd",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/crypto/SnarkConstants.sol": {
+      "lastModificationDate": 1730842993656,
+      "contentHash": "5cd35d3d4212a8b84edc24ce7e765d47",
+      "sourceName": "contracts/crypto/SnarkConstants.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SnarkConstants"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/crypto/PoseidonT3.sol": {
+      "lastModificationDate": 1730842993371,
+      "contentHash": "075a03eb9c09466aa276b3727f452bea",
+      "sourceName": "contracts/crypto/PoseidonT3.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "PoseidonT3"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/crypto/PoseidonT5.sol": {
+      "lastModificationDate": 1730842993606,
+      "contentHash": "b3e86d58915cea43914bb4240c269a64",
+      "sourceName": "contracts/crypto/PoseidonT5.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "PoseidonT5"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/crypto/PoseidonT4.sol": {
+      "lastModificationDate": 1730842993405,
+      "contentHash": "f2016e5b61ac88c516357cd37103167f",
+      "sourceName": "contracts/crypto/PoseidonT4.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "PoseidonT4"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/crypto/PoseidonT6.sol": {
+      "lastModificationDate": 1730842993614,
+      "contentHash": "3302cfa41bd161f9e3904288384c754e",
+      "sourceName": "contracts/crypto/PoseidonT6.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "PoseidonT6"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1731697881110,
+      "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/crypto/Verifier.sol": {
+      "lastModificationDate": 1730842993664,
+      "contentHash": "68af5cfa0c0756e1a7e31bbb4b65bcb5",
+      "sourceName": "contracts/crypto/Verifier.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Pairing.sol",
+        "./SnarkConstants.sol",
+        "./SnarkCommon.sol",
+        "../interfaces/IVerifier.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Verifier"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/crypto/Pairing.sol": {
+      "lastModificationDate": 1730842993364,
+      "contentHash": "b2dc118ceb1caec33e8edd2cf90e1bdf",
+      "sourceName": "contracts/crypto/Pairing.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Pairing"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/interfaces/IVerifier.sol": {
+      "lastModificationDate": 1730842994258,
+      "contentHash": "155195200c98d5f126dd69bfa6c2ac60",
+      "sourceName": "contracts/interfaces/IVerifier.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../crypto/SnarkCommon.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "IVerifier"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/crypto/SnarkCommon.sol": {
+      "lastModificationDate": 1730842993621,
+      "contentHash": "14cb5dc3e62c9224e1d843e9ab980318",
+      "sourceName": "contracts/crypto/SnarkCommon.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Pairing.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SnarkCommon"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/interfaces/IVkRegistry.sol": {
+      "lastModificationDate": 1730842994268,
+      "contentHash": "d719892d7023b2b2703c1a6a2e4aaba9",
+      "sourceName": "contracts/interfaces/IVkRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../crypto/SnarkCommon.sol",
+        "../utilities/DomainObjs.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "IVkRegistry"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/TallyFactory.sol": {
+      "lastModificationDate": 1730842993205,
+      "contentHash": "299f5b142f28a859e90f1cbe1aef1bca",
+      "sourceName": "contracts/TallyFactory.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Tally.sol",
+        "./interfaces/ITallyFactory.sol",
+        "./utilities/DomainObjs.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "TallyFactory"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/Tally.sol": {
+      "lastModificationDate": 1731697550951,
+      "contentHash": "a6e59a7155902ceaf43380defef079ef",
+      "sourceName": "contracts/Tally.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IMACI.sol",
+        "./crypto/Hasher.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./interfaces/IPoll.sol",
+        "./interfaces/ITally.sol",
+        "./interfaces/IMessageProcessor.sol",
+        "./crypto/SnarkCommon.sol",
+        "./interfaces/IVerifier.sol",
+        "./interfaces/IVkRegistry.sol",
+        "./utilities/CommonUtilities.sol",
+        "./utilities/DomainObjs.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Tally"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/interfaces/IPoll.sol": {
+      "lastModificationDate": 1730842994154,
+      "contentHash": "beb4c8f681b4ab930a5d948855bb0f73",
+      "sourceName": "contracts/interfaces/IPoll.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utilities/DomainObjs.sol",
+        "./IMACI.sol",
+        "../trees/AccQueue.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "IPoll"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/interfaces/ITally.sol": {
+      "lastModificationDate": 1731697550952,
+      "contentHash": "e96a6aebf04e2e485dcad85ff4f79ecc",
+      "sourceName": "contracts/interfaces/ITally.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "ITally"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/interfaces/IMessageProcessor.sol": {
+      "lastModificationDate": 1730842994119,
+      "contentHash": "f66e7d1c967bfd7b9a79970dd928e70f",
+      "sourceName": "contracts/interfaces/IMessageProcessor.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "IMessageProcessor"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/utilities/CommonUtilities.sol": {
+      "lastModificationDate": 1730842995311,
+      "contentHash": "5379b56e0b12ce89ec9b4f20e26013a0",
+      "sourceName": "contracts/utilities/CommonUtilities.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IPoll.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "CommonUtilities"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
+      "lastModificationDate": 1731697881118,
+      "contentHash": "1e64e2ad597dc5b2dae11346502baad4",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC721.sol",
+        "./IERC721Receiver.sol",
+        "./extensions/IERC721Metadata.sol",
+        "../../utils/Context.sol",
+        "../../utils/Strings.sol",
+        "../../utils/introspection/ERC165.sol",
+        "../../interfaces/draft-IERC6093.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC721"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
+      "lastModificationDate": 1731697881110,
+      "contentHash": "4aefc698f77ecbace7f401257dfe182d",
+      "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC1155Errors",
+        "IERC20Errors",
+        "IERC721Errors"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1731697881145,
+      "contentHash": "ba57ff4ddf1d9cae9d2009792795b7f6",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./math/Math.sol",
+        "./math/SignedMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Strings"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
+      "lastModificationDate": 1731697881136,
+      "contentHash": "5df8fdb527e563085847cad29e3c5f2e",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../utils/introspection/IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC721"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
+      "lastModificationDate": 1731697881113,
+      "contentHash": "6a55c353946e471d9792965d06208295",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC165.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC165"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+      "lastModificationDate": 1731697881138,
+      "contentHash": "fc8a9841f4bdd6329c26a00d5e75f4b3",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC721Receiver"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
+      "lastModificationDate": 1731697881137,
+      "contentHash": "12c206f185cb951213799561fdcaa40d",
+      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC721.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC721Metadata"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/math/SignedMath.sol": {
+      "lastModificationDate": 1731697881144,
+      "contentHash": "b6c6bdc7aaca4fe5b680760a72e09d3e",
+      "sourceName": "@openzeppelin/contracts/utils/math/SignedMath.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SignedMath"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1731697881140,
+      "contentHash": "718fa8ba0ff269c92e364c1429d9de57",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
+      "lastModificationDate": 1731697881130,
+      "contentHash": "de0163561b417b800d01749cbbe2147e",
+      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC165"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1731697881114,
+      "contentHash": "c6375ef25e84c90b3d15f9ec4eef218f",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol",
+        "../../interfaces/draft-IERC6093.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1731697881131,
+      "contentHash": "5517c8678c18eb1a8ba58810e7ca39ca",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1731697881132,
+      "contentHash": "4c02fa6f7ae7b6c289cef80424f0c875",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/mocks/MockERC20.sol": {
+      "lastModificationDate": 1730842994355,
+      "contentHash": "65074aa4abecb8d3507e3e7add1c9902",
+      "sourceName": "contracts/mocks/MockERC20.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MockERC20"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/utilities/SignUpToken.sol": {
+      "lastModificationDate": 1730842995364,
+      "contentHash": "0b47329fb78e01efda1b413eda1d3de4",
+      "sourceName": "contracts/utilities/SignUpToken.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SignUpToken"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/gatekeepers/SignUpTokenGatekeeper.sol": {
+      "lastModificationDate": 1730842993874,
+      "contentHash": "51c6f6858fb1f83bd5b038ddcc6e460b",
+      "sourceName": "contracts/gatekeepers/SignUpTokenGatekeeper.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+        "./SignUpGatekeeper.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SignUpTokenGatekeeper"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/gatekeepers/zupass/ZupassGatekeeper.sol": {
+      "lastModificationDate": 1730842993916,
+      "contentHash": "b45aac4226cc3f683794f3c0133168e8",
+      "sourceName": "contracts/gatekeepers/zupass/ZupassGatekeeper.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "../SignUpGatekeeper.sol",
+        "./ZupassGroth16Verifier.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ZupassGatekeeper"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/gatekeepers/zupass/ZupassGroth16Verifier.sol": {
+      "lastModificationDate": 1730842993956,
+      "contentHash": "6e099d4337511ebcc6cbc6056b5f306d",
+      "sourceName": "contracts/gatekeepers/zupass/ZupassGroth16Verifier.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ZupassGroth16Verifier"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/gatekeepers/SemaphoreGatekeeper.sol": {
+      "lastModificationDate": 1730842993857,
+      "contentHash": "5e4a27edc468ecdba7eb414553edb0e4",
+      "sourceName": "contracts/gatekeepers/SemaphoreGatekeeper.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./SignUpGatekeeper.sol",
+        "../interfaces/ISemaphore.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SemaphoreGatekeeper"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/interfaces/ISemaphore.sol": {
+      "lastModificationDate": 1730842994168,
+      "contentHash": "2063ef27017f49faa2f8cb117399d5c0",
+      "sourceName": "contracts/interfaces/ISemaphore.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.20"
+      ],
+      "artifacts": [
+        "ISemaphore"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/mocks/MockSemaphore.sol": {
+      "lastModificationDate": 1730842994405,
+      "contentHash": "11752c1416dda864826c615d69d8de51",
+      "sourceName": "contracts/mocks/MockSemaphore.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ISemaphore.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MockSemaphore"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/gatekeepers/MerkleProofGatekeeper.sol": {
+      "lastModificationDate": 1730842993818,
+      "contentHash": "d15d845f845a9aad65da51a6596c6b56",
+      "sourceName": "contracts/gatekeepers/MerkleProofGatekeeper.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol",
+        "./SignUpGatekeeper.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MerkleProofGatekeeper"
+      ]
+    },
+    "/Users/jason/Desktop/maci/node_modules/.pnpm/@openzeppelin+contracts@5.0.2/node_modules/@openzeppelin/contracts/utils/cryptography/MerkleProof.sol": {
+      "lastModificationDate": 1731697881140,
+      "contentHash": "aa87c17aff0d584703d5d046b9979f1d",
+      "sourceName": "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MerkleProof"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/gatekeepers/HatsGatekeeperBase.sol": {
+      "lastModificationDate": 1730842993765,
+      "contentHash": "80a17e2d909d60b55dc81299f8fa45e9",
+      "sourceName": "contracts/gatekeepers/HatsGatekeeperBase.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "../interfaces/IHats.sol",
+        "./SignUpGatekeeper.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "HatsGatekeeperBase"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/interfaces/IHats.sol": {
+      "lastModificationDate": 1730842994070,
+      "contentHash": "414027b3fb562af20159357fb8313b44",
+      "sourceName": "contracts/interfaces/IHats.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "IHats"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/gatekeepers/HatsGatekeeperSingle.sol": {
+      "lastModificationDate": 1730842993808,
+      "contentHash": "b6a7c6fa7837c6759fb352b0c4cde252",
+      "sourceName": "contracts/gatekeepers/HatsGatekeeperSingle.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./HatsGatekeeperBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "HatsGatekeeperSingle"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/gatekeepers/HatsGatekeeperMultiple.sol": {
+      "lastModificationDate": 1730842993772,
+      "contentHash": "40c6054c04433b60c3ac7a142262d926",
+      "sourceName": "contracts/gatekeepers/HatsGatekeeperMultiple.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./HatsGatekeeperBase.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "HatsGatekeeperMultiple"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/gatekeepers/GitcoinPassportGatekeeper.sol": {
+      "lastModificationDate": 1730842993756,
+      "contentHash": "d4ba49b972e6ed85004d96675d2ff7ec",
+      "sourceName": "contracts/gatekeepers/GitcoinPassportGatekeeper.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./SignUpGatekeeper.sol",
+        "../interfaces/IGitcoinPassportDecoder.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "GitcoinPassportGatekeeper"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/interfaces/IGitcoinPassportDecoder.sol": {
+      "lastModificationDate": 1730842994062,
+      "contentHash": "7eb9332ad5d068adf331e6c1fff26386",
+      "sourceName": "contracts/interfaces/IGitcoinPassportDecoder.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IGitcoinPassportDecoder"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/gatekeepers/FreeForAllGatekeeper.sol": {
+      "lastModificationDate": 1730842993721,
+      "contentHash": "42209f9ed98a195dbc63e2a055346936",
+      "sourceName": "contracts/gatekeepers/FreeForAllGatekeeper.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SignUpGatekeeper.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "FreeForAllGatekeeper"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/gatekeepers/EASGatekeeper.sol": {
+      "lastModificationDate": 1730842993715,
+      "contentHash": "1d4a84dd7408ad407918d9bfa6a58665",
+      "sourceName": "contracts/gatekeepers/EASGatekeeper.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./SignUpGatekeeper.sol",
+        "../interfaces/IEAS.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "EASGatekeeper"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/interfaces/IEAS.sol": {
+      "lastModificationDate": 1730842994055,
+      "contentHash": "d06e5551b58404467208e5b118c3eccb",
+      "sourceName": "contracts/interfaces/IEAS.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "IEAS"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/mocks/MockEAS.sol": {
+      "lastModificationDate": 1730842994317,
+      "contentHash": "e3e23e889e6933993f6d63ec45cd6635",
+      "sourceName": "contracts/mocks/MockEAS.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/IEAS.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MockEAS"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/MessageProcessor.sol": {
+      "lastModificationDate": 1730842993109,
+      "contentHash": "d628fd75aaba8706bb19854cfadd4c9a",
+      "sourceName": "contracts/MessageProcessor.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./trees/AccQueue.sol",
+        "./interfaces/IMACI.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./interfaces/IPoll.sol",
+        "./crypto/SnarkCommon.sol",
+        "./crypto/Hasher.sol",
+        "./interfaces/IVerifier.sol",
+        "./interfaces/IVkRegistry.sol",
+        "./interfaces/IMessageProcessor.sol",
+        "./utilities/CommonUtilities.sol",
+        "./utilities/DomainObjs.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MessageProcessor"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/MessageProcessorFactory.sol": {
+      "lastModificationDate": 1730842993119,
+      "contentHash": "78e1e98f7fd358e093a837de688d6a98",
+      "sourceName": "contracts/MessageProcessorFactory.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./utilities/Params.sol",
+        "./utilities/DomainObjs.sol",
+        "./MessageProcessor.sol",
+        "./interfaces/IMPFactory.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "MessageProcessorFactory"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/crypto/MockVerifier.sol": {
+      "lastModificationDate": 1730842993356,
+      "contentHash": "05dcbbe488d522e547036f612187ad7e",
+      "sourceName": "contracts/crypto/MockVerifier.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./SnarkConstants.sol",
+        "./SnarkCommon.sol",
+        "../interfaces/IVerifier.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MockVerifier"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/benchmarks/HasherBenchmarks.sol": {
+      "lastModificationDate": 1730842993269,
+      "contentHash": "014dcb4367fc1fa63ee140cd115d1ea7",
+      "sourceName": "contracts/benchmarks/HasherBenchmarks.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../crypto/Hasher.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "HasherBenchmarks"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/Poll.sol": {
+      "lastModificationDate": 1731697550950,
+      "contentHash": "0bb250bcca0481c0b99d2cc20e1a8aca",
+      "sourceName": "contracts/Poll.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./utilities/Params.sol",
+        "./crypto/SnarkCommon.sol",
+        "./interfaces/IPoll.sol",
+        "./utilities/Utilities.sol",
+        "./crypto/BabyJubJub.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Poll"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/PollFactory.sol": {
+      "lastModificationDate": 1730842993163,
+      "contentHash": "e3984d05052547b2a696dfd82ab8b938",
+      "sourceName": "contracts/PollFactory.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IMACI.sol",
+        "./trees/AccQueue.sol",
+        "./trees/AccQueueQuinaryMaci.sol",
+        "./utilities/Params.sol",
+        "./utilities/DomainObjs.sol",
+        "./Poll.sol",
+        "./interfaces/IPollFactory.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "PollFactory"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/AccQueueQuinaryMaci.sol": {
+      "lastModificationDate": 1730842995107,
+      "contentHash": "46a438236e6dd5c4f00dd2dde675f2d0",
+      "sourceName": "contracts/trees/AccQueueQuinaryMaci.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./zeros/MerkleQuinaryMaci.sol",
+        "./AccQueueQuinary.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AccQueueQuinaryMaci"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/zeros/MerkleQuinaryMaci.sol": {
+      "lastModificationDate": 1731697917568,
+      "contentHash": "a361797ce8f0097b6fc65d20541845f8",
+      "sourceName": "contracts/trees/zeros/MerkleQuinaryMaci.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MerkleZeros"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/AccQueueQuinary.sol": {
+      "lastModificationDate": 1730842995055,
+      "contentHash": "94a35809cfb93754f2eeece91d7062d2",
+      "sourceName": "contracts/trees/AccQueueQuinary.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AccQueue.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AccQueueQuinary"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/AccQueueQuinaryBlankSl.sol": {
+      "lastModificationDate": 1730842995069,
+      "contentHash": "f5480150894eb2394a64955f00d89f67",
+      "sourceName": "contracts/trees/AccQueueQuinaryBlankSl.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./zeros/MerkleQuinaryBlankSl.sol",
+        "./AccQueueQuinary.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AccQueueQuinaryBlankSl"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/zeros/MerkleQuinaryBlankSl.sol": {
+      "lastModificationDate": 1731697917568,
+      "contentHash": "73a90fdd88d38a128b41fa468669ad89",
+      "sourceName": "contracts/trees/zeros/MerkleQuinaryBlankSl.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MerkleZeros"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/AccQueueQuinary0.sol": {
+      "lastModificationDate": 1730842995063,
+      "contentHash": "f8485941280ecfcdcc410ada8c5e759f",
+      "sourceName": "contracts/trees/AccQueueQuinary0.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./zeros/MerkleQuinary0.sol",
+        "./AccQueueQuinary.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AccQueueQuinary0"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/zeros/MerkleQuinary0.sol": {
+      "lastModificationDate": 1731697917568,
+      "contentHash": "b198028099ddf3545854c03e352c8381",
+      "sourceName": "contracts/trees/zeros/MerkleQuinary0.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MerkleZeros"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/AccQueueBinary.sol": {
+      "lastModificationDate": 1730842994463,
+      "contentHash": "48fadfe39a331df379f1e77938e51cce",
+      "sourceName": "contracts/trees/AccQueueBinary.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./AccQueue.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AccQueueBinary"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/AccQueueBinaryMaci.sol": {
+      "lastModificationDate": 1730842995035,
+      "contentHash": "8cb2f2170f736db2c45f4699aaaf179f",
+      "sourceName": "contracts/trees/AccQueueBinaryMaci.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./zeros/MerkleBinaryMaci.sol",
+        "./AccQueueBinary.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AccQueueBinaryMaci"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/zeros/MerkleBinaryMaci.sol": {
+      "lastModificationDate": 1731697917567,
+      "contentHash": "5d288ad6f1bbc45c7391b4e0644dec20",
+      "sourceName": "contracts/trees/zeros/MerkleBinaryMaci.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MerkleZeros"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/AccQueueBinary0.sol": {
+      "lastModificationDate": 1730842994471,
+      "contentHash": "3751f84126ba87566819d6559651b216",
+      "sourceName": "contracts/trees/AccQueueBinary0.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./zeros/MerkleBinary0.sol",
+        "./AccQueueBinary.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "AccQueueBinary0"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/zeros/MerkleBinary0.sol": {
+      "lastModificationDate": 1731697917568,
+      "contentHash": "2b9dedc167ab720f2163490eb9e1c556",
+      "sourceName": "contracts/trees/zeros/MerkleBinary0.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MerkleZeros"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/VkRegistry.sol": {
+      "lastModificationDate": 1730842993213,
+      "contentHash": "4df37a296d7bee064bb595b310d84fc0",
+      "sourceName": "contracts/VkRegistry.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./crypto/SnarkCommon.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./interfaces/IVkRegistry.sol",
+        "./utilities/DomainObjs.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "VkRegistry"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/mocks/MockTally.sol": {
+      "lastModificationDate": 1730842994413,
+      "contentHash": "4447c00b38c09093a2dd821122151dbe",
+      "sourceName": "contracts/mocks/MockTally.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/ITally.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MockTally"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/initialVoiceCreditProxy/ConstantInitialVoiceCreditProxy.sol": {
+      "lastModificationDate": 1730842993970,
+      "contentHash": "a7c5fbf3f7cffa95d637155d1eba6ef8",
+      "sourceName": "contracts/initialVoiceCreditProxy/ConstantInitialVoiceCreditProxy.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./InitialVoiceCreditProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ConstantInitialVoiceCreditProxy"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/mocks/MockGitcoinPassportDecoder.sol": {
+      "lastModificationDate": 1730842994363,
+      "contentHash": "bfc2d284133b6543ff65e9f7e2c8fbbd",
+      "sourceName": "contracts/mocks/MockGitcoinPassportDecoder.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MockGitcoinPassportDecoder"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/mocks/MockHatsProtocol.sol": {
+      "lastModificationDate": 1730842994370,
+      "contentHash": "8b6d13d6c2019126864c8cadffae579f",
+      "sourceName": "contracts/mocks/MockHatsProtocol.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MockHatsProtocol"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/zeros/MerkleBinaryBlankSl.sol": {
+      "lastModificationDate": 1731697917567,
+      "contentHash": "8211d0b2df467e6ce202525c65b48625",
+      "sourceName": "contracts/trees/zeros/MerkleBinaryBlankSl.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MerkleZeros"
+      ]
+    },
+    "/Users/jason/Desktop/maci/packages/contracts/contracts/trees/zeros/MerkleQuinaryMaciWithSha256.sol": {
+      "lastModificationDate": 1730842995271,
+      "contentHash": "89a0ec6d1a5c673b2b6260e537e2da57",
+      "sourceName": "contracts/trees/zeros/MerkleQuinaryMaciWithSha256.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "MerkleZeros"
+      ]
+    }
+  }
+}
