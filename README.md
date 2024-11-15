@@ -6,10 +6,10 @@ TODO list:
   - [ ] XMTP
   - [ ] Web3Auth
 - June
-  - [ ] API for create key pairs
-  - [ ] API for signup
-  - [ ] API for vote
-  - [ ] API for check result
+  - [ ] API for create key pairs: keygen() -> (pk, sk)
+  - [ ] API for signup: (pk) -> bool 
+  - [ ] API for vote: (pk, sk, option) -> bool
+  - [ ] API for check result () -> url
 - Phini
 
 - Tim
