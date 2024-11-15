@@ -2,7 +2,9 @@
 An anonymous voting system to prevent bribery.
 
 TODO list:
-- Allen
+- Alan
+  - [ ] XMTP
+  - [ ] Web3Auth
 - June
   - [ ] API for create key pairs
   - [ ] API for signup
@@ -11,3 +13,15 @@ TODO list:
 - Phini
 
 - Tim
+  - [ ] WorldID
+  - [ ] privy
+
+
+## How to run 
+
+1. start the frontend
+```
+$ cd frontend
+$ yarn
+$ yarn dev
+```
