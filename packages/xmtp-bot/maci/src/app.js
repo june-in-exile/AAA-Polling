@@ -1,11 +1,13 @@
 import express from 'express';
-import generateKeypairRoutes from './routes/genKeypair';
+import genKeypair from './routes/genKeypair';
+import signup from './routes/signup';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // 使用路由
-app.use('/', generateKeypairRoutes);
+app.use('/', genKeypair);
+app.use('/', signup);
 
 // 啟動伺服器
 app.listen(PORT, () => {
