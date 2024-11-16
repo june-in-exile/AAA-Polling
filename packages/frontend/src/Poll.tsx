@@ -1,38 +1,32 @@
+import React, { useCallback } from 'react';
 import { usePrivy, useWallets, getEmbeddedConnectedWallet } from '@privy-io/react-auth'
 import { Navigate, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import { useLocation } from 'react-router-dom';
+import useNavigationStore from './FloatingInbox/useNavigationStore';
+import { useStartConversation } from "@xmtp/react-sdk";
+import useWalletStore from './useWalletStore'; 
 
 export default function Poll() {
-    const navigate = useNavigate()
-    const [] = useState(null);
     const { user, logout, ready, authenticated } = usePrivy()
     const { wallets } = useWallets();
     const embeddedWallet = getEmbeddedConnectedWallet(wallets)
     const embeddedWalletAddress = embeddedWallet?.address
-    const transactionRequest = {
-        to: '0xTheContractAddress',
-        data: "calldata", // replace it with real calldata
-        value: 0,
-    }
+    const navigate = useNavigate();
+    const setEmbeddedWalletAddress = useWalletStore((state) => state.setEmbeddedWalletAddress);
+    setEmbeddedWalletAddress(embeddedWalletAddress as any);
+    
 
     if (!user) {
-        return <Navigate to="/" replace />
+        return <Navigate to="/Privy" replace />
     } else if (!embeddedWalletAddress) {
         return <Navigate to="/createPrivyWallet" replace />
     }
 
     const handleSendTransaction = async () => {
-        try {
-            const provider = await embeddedWallet.getEthereumProvider();
-            const txHash = await provider.request({
-                method: 'eth_sendTransaction',
-                params: [transactionRequest],
-            });
-            console.log("Transaction Hash:", txHash);
-        } catch (error) {
-            console.error("Error sending transaction:", error);
-        }
+        navigate("/")
     }
+
 
     const deleteUser = async () => {
         try {

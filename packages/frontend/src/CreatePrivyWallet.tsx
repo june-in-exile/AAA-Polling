@@ -1,6 +1,7 @@
 import { usePrivy, useWallets, getEmbeddedConnectedWallet } from '@privy-io/react-auth'
 import { Navigate } from 'react-router-dom'
 
+
 export default function CreatePrivyWallet() {
     const { user, logout, ready, authenticated, createWallet } = usePrivy();
     const { wallets } = useWallets();
