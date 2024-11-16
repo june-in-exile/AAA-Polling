@@ -1,6 +1,8 @@
 import React, { useCallback, useState, useEffect } from "react";
 import { MessageInput } from "./MessageInput";
 import { useStartConversation, CachedConversation, getDbInstance, getLastMessage, useClient } from "@xmtp/react-sdk";
+import { Navigate, useNavigate } from 'react-router-dom'
+import useNavigationStore from "./useNavigationStore";
 
 interface NewConversationProps {
   selectConversation: (conversation: CachedConversation) => void;
@@ -13,7 +15,9 @@ export const NewConversation: React.FC<NewConversationProps> = ({ selectConversa
   const [ currentMessages, setMessages] = useState<string[]>([]); // State to store messages
   const [ currentConversation, setCurrentConversation] = useState<any>()
   const { client, error, isLoading, initialize, disconnect } = useClient();
+  const navigate = useNavigate();
   
+
   useEffect(() => {
     if (!client) return;
 
@@ -79,17 +83,16 @@ export const NewConversation: React.FC<NewConversationProps> = ({ selectConversa
         alert("No peer address provided");
         return;
       }
-
-      // Save the message locally before sending
-      // setMessages((prevMessages) => [...prevMessages, message]);
-
+      if (message.startsWith("/privy")){
+        navigate('/privy');
+        return
+      }
       // Start conversation and send the message
       const newConversation = await startConversation(peerAddress, message);
       setCurrentConversation(newConversation)
       if (newConversation?.cachedConversation) {
         selectConversation(newConversation.cachedConversation);
       }
-      
     },
     [peerAddress, startConversation, selectConversation]
   );

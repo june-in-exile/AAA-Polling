@@ -5,6 +5,7 @@ import { AuthAdapter } from "@web3auth/auth-adapter";
 import { useEffect, useState } from "react";
 import { FloatingInbox } from "./FloatingInbox";
 import { ethers, JsonRpcSigner } from "ethers";
+import useWalletStore from "./useWalletStore";
 
 const clientId = "BPi5PB_UiIZ-cPz1GtV5i1I2iOSOHuimiXBI0e-Oe_u6X3oVAbCiAZOTEBtTXw4tsluTITPqA8zMsfxIKMjiqNQ"; // get from https://dashboard.web3auth.io
 
@@ -46,18 +47,28 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [address, setAddress] = useState<string | null>(null);
   const [wallet, setWallet] = useState<any | null>(null);
+  const { embeddedWalletAddress} = useWalletStore();
 
   useEffect(() => {
     const init = async () => {
       try {
+        // Check if already connected
+        if (web3auth.connected) {
+          console.log("Web3Auth is already connected.");
+          setProvider(web3auth.provider); // Set the existing provider
+          setLoggedIn(true); // Update logged-in state
+          return; // Skip reinitialization
+        }
+    
+        // Initialize Web3Auth if not already connected
         await web3auth.init();
         setProvider(web3auth.provider);
-
+    
         if (web3auth.connected) {
           setLoggedIn(true);
         }
       } catch (error) {
-        console.error(error);
+        console.error("Web3Auth initialization error:", error);
       }
     };
 
@@ -157,6 +168,7 @@ function App() {
       </div>
 
       {address && <h3 className="text-lg mb-6">{address}</h3>}
+      {embeddedWalletAddress && <h3 className="text-lg mb-6">privy address: {embeddedWalletAddress}</h3>}
 
       {loggedIn && (
         <>
