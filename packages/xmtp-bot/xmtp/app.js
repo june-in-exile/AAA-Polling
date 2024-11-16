@@ -1,8 +1,8 @@
 const express = require('express');
-const genKeyPair = require('./routes/genKeyPair.js');
-const signup = require('./routes/signup.js');
-const vote = require('./routes/vote.js');
-const tally = require('./routes/tally.js');
+const genKeyPair = require('./src/routes/genKeyPair.js');
+const signup = require('./src/routes/signup.js');
+const vote = require('./src/routes/vote.js');
+const tally = require('./src/routes/tally.js');
 
 const app = express();
 const port = 3000;

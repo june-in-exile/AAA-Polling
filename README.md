@@ -19,7 +19,15 @@ TODO list:
 
 ## How to run 
 
-1. start the bot
+1. start the frontend
 ```
+cd packages/frontend
+yarn dev
+```
+
+2. start the bot
+```
+cd packages/xmtp-bot
+yarn dev
 ```
 

@@ -1,15 +1,36 @@
 {
-  "name": "test",
+  "name": "xmtp-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "private": true,
   "type": "module",
+  "description": "",
+  "keywords": [],
+  "author": "",
   "scripts": {
+    "start": "node dist/index.js",
     "build": "tsc",
     "dev": "tsc -w & sleep 1 && node --watch dist/index.js",
-    "start": "node dist/index.js",
-    "postinstall": "tsc"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "tsc",
+    "download-zkeys:test": "ts-node ./scripts/downloadZkeys.ts test ./zkeys"
   },
   "dependencies": {
+    "@ethersproject/providers": "^5.7.2",
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "maci": "^0.0.1",
+    "maci-cli": "^2.4.0",
+    "maci-contracts": "^2.4.0",
+    "tar": "^7.4.3",
     "@xmtp/message-kit": "latest"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "ethers": "^6.13.4"
   },
   "engines": {
     "node": ">=20"
