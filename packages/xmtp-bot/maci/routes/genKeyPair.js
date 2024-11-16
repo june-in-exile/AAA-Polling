@@ -1,3 +1,4 @@
+
 import cli from 'maci-cli';
 
 export default function genKeyPair() {
