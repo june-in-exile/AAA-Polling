@@ -1,7 +1,6 @@
+const cli = require('maci-cli');
 
-import cli from 'maci-cli';
-
-export default function genKeyPair() {
+module.exports = function genKeyPair() {
     const keyPair = cli.genKeyPair({ seed: false });
     return keyPair;
 }

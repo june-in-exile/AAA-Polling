@@ -1,3 +1,3 @@
-export default function signup(maciPubkey) {
+module.exports = function signup(maciPubkey) {
     return true;
 }

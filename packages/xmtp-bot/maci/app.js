@@ -1,6 +1,6 @@
-import express from 'express';
-import genKeyPair from './routes/genKeyPair.js';
-import signup from './routes/signup.js';
+const express = require('express');
+const genKeyPair = require('./routes/genKeyPair.js');
+const signup = require('./routes/signup.js');
 
 const app = express();
 const port = 3000;

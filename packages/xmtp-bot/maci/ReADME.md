@@ -19,3 +19,7 @@ curl -X POST http://localhost:3000/signup \
 -d '{"pubkey": "macipk.a8fcc8359bcbee4109fc2b1aaf14521cbcb40da6bd0d2db841bb4d105ac1cfe9"}'
 # {"success":true}
 ```
+
+```
+npx hardhat node
+```
