@@ -13,7 +13,8 @@
     "dependencies": {
         "express": "^4.21.1",
         "maci": "^0.0.1",
-        "maci-cli": "^2.4.0"
+        "maci-cli": "^2.4.0",
+        "maci-contracts": "^2.4.0"
     },
     "type": "module"
 }
