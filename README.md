@@ -19,5 +19,7 @@ TODO list:
 
 ## How to run 
 
-1. start the frontend
+1. start the bot
 ```
+```
+
