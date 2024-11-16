@@ -94,21 +94,6 @@ export const NewConversation: React.FC<NewConversationProps> = ({ selectConversa
     [peerAddress, startConversation, selectConversation]
   );
 
-  const handleReceiveMessage = async () => {
-    // const stream = await client?.conversations.streamAllMessages();
-    // console.log(stream)
-    // try {
-    //   for await (const message of stream as any) {
-    //     console.log("here")
-    //     // Received a message
-    //     console.log(message.content)
-    //     setMessages((prevMessages) => [...prevMessages, message])
-    //   }
-    // } catch (error) {
-    //   // log any stream errors
-    //   console.error(error);
-    // }
-  };
 
   return (
     <div style={{ display: "flex", flexDirection: "column", height: "100%" }}>
@@ -121,12 +106,6 @@ export const NewConversation: React.FC<NewConversationProps> = ({ selectConversa
             </div>
           ))}
         </div>
-      </div>
-      {/* Button to receive a new message */}
-      <div style={styles.buttonContainer}>
-        <button style={styles.button} onClick={handleReceiveMessage}>
-          Get New Message
-        </button>
       </div>
       {/* Message input */}
       <MessageInput onSendMessage={handleSendMessage} isPWA={isPWA} />
