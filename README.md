@@ -21,7 +21,3 @@ TODO list:
 
 1. start the frontend
 ```
-$ cd frontend
-$ yarn
-$ yarn dev
-```
