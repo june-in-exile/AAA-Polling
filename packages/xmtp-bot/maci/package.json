@@ -14,7 +14,6 @@
         "dotenv": "^16.4.5",
         "ethers": "^5.7.2",
         "express": "^4.21.1",
-        "maci": "^0.0.1",
         "maci-cli": "^2.4.0"
     },
     "devDependencies": {

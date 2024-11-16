@@ -23,3 +23,7 @@ curl -X POST http://localhost:3000/signup \
 ```
 npx hardhat node
 ```
+
+```
+npx hardhat run scripts/deploy.js --network hardhat
+```
