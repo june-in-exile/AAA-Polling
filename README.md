@@ -1,4 +1,4 @@
-# AAA-Polling
+# Volt
 An anonymous voting system to prevent bribery.
 
 TODO list:
